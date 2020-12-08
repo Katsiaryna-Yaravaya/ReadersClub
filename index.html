@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Readers club</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+    <div class="header-wrapper">
+        <a href="/" class="header-logo">
+            <img class="header-logo-image" src="img/logo.png" alt="Перо">
+        </a>
+        <nav class="header-nav">
+            <ul class="header-menu">
+                <li class="header-menu-item"><a href="#" class="header-menu-link">Свежее</a></li>
+                <li class="header-menu-item"><a href="#" class="header-menu-link">Лучшее</a></li>
+                <li class="header-menu-item"><a href="#" class="header-menu-link">Горящее</a></li>
+                <li class="header-menu-item"><a href="#" class="header-menu-link">Подписки</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+    </div>
+</header>
+
+<div class="content">
+    <main class="posts">
+    </main>
+
+    <form action="#" class="add-post">
+        <input type="text" name="title" class="add-title" placeholder="Заголовок поста">
+        <textarea name="text" id="text" class="add-text" placeholder="Текст вашего поста"></textarea>
+        <input type="text" name="tags" class="add-tags" placeholder="Добавьте теги через запятую">
+
+        <div class="add-buttons">
+            <button type="submit" class="button add-button">
+                <svg class="icon icon-fire">
+                    <use xlink:href="img/icons.svg#fire"></use>
+                </svg>
+                Опубликовать пост
+            </button>
+        </div>
+    </form>
+
+    <aside class="sidebar">
+        <div class="login">
+            <form class="login-form">
+                <h2 class="login-title">Авторизация</h2>
+                <input type="email"
+                       class="login-input login-email"
+                       name="email"
+                       minlength="3"
+                       required
+                       placeholder="Ввведите email">
+                <input type="password"
+                       class="login-input login-password"
+                       name="password"
+                       minlength="3"
+                       required
+                       placeholder="Введите пароль">
+                <a href="#" class="login-forget">Забыли пароль ?</a>
+                <button class="login-signin">Войти</button>
+                <a href="#" class="login-signup">Регистрация</a>
+            </form>
+        </div>
+
+        <div class="user">
+            <div class="user-container">
+                <a href="#" class="user-info">
+                    <img width="40" height="40" src="img/avatar.jpg" alt="photo: user" class="user-avatar">
+                    <span class="user-name">Kate</span>
+                </a>
+                <a href="#" class="edit">
+                    <img class="icon icon-edit" src="img/edit.svg" alt="редактировать">
+                </a>
+                <a href="#" class="exit">
+                    <svg class="icon icon-exit">
+                        <use xlink:href="img/icons.svg#exit"></use>
+                    </svg>
+                </a>
+            </div>
+
+            <form class="edit-container">
+                <h2 class="edit-title">Редактировать</h2>
+                <label class="edit-label">Ваш логин
+                    <input type="text"
+                           class="edit-input edit-username"
+                           name="username"
+                           minlength="3"
+                           placeholder="логин"
+                    >
+                </label>
+                <label class="edit-label">Ваше фото
+                    <input type="text"
+                           class="edit-input edit-photo"
+                           name="photo"
+                           minlength="3"
+                           placeholder="URL-photo"
+                    >
+                </label>
+                <button class="edit-btn">Сохранить</button>
+            </form>
+        </div>
+
+        <nav class="sidebar-nav">
+            <ul class="sidebar-menu">
+                <li class="sidebar-menu-item">
+                    <a href="#" class="sidebar-menu-link">Ответы</a>
+                </li>
+                <li class="sidebar-menu-item">
+                    <a href="#" class="sidebar-menu-link">Комментарии</a>
+                </li>
+                <li class="sidebar-menu-item">
+                    <a href="#" class="sidebar-menu-link">Оценки</a>
+                </li>
+                <li class="sidebar-menu-item">
+                    <a href="#" class="sidebar-menu-link">Сохраненное </a>
+                </li>
+                <li class="sidebar-menu-item">
+                    <a href="#" class="sidebar-menu-link">Подписки</a>
+                </li>
+                <li class="sidebar-menu-item">
+                    <a href="#" class="sidebar-menu-link">Заметки</a>
+                </li>
+                <li class="sidebar-menu-item">
+                    <a href="#" class="sidebar-menu-link">Игнор-лист</a>
+                </li>
+            </ul>
+        </nav>
+        <a class="button button-new-post">
+            <svg class="icon icon-fire">
+                <use xlink:href="img/icons.svg#fire"></use>
+            </svg>
+            Опубликовать пост
+        </a>
+    </aside>
+    <!-- /.sidebar -->
+</div>
+<!-- /.content -->
+</body>
+</html>
